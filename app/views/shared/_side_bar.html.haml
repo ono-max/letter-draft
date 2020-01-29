@@ -1,6 +1,8 @@
 .wrapper__main__side-bar
-  .wrapper__main__side-bar__block1 デザイン1
-  .wrapper__main__side-bar__block2 デザイン2
+  .wrapper__main__side-bar__block1
+    = link_to edit_user_path(current_user) do
+      = icon('fas', 'cog', class: 'icon')
+  .wrapper__main__side-bar__block2
   .wrapper__main__side-bar__block3 デザイン3
   .wrapper__main__side-bar__block4 デザイン4
   .wrapper__main__side-bar__block5 デザイン5
