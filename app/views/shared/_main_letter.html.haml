@@ -1,1 +1,8 @@
 .wrapper__main__main-bar
+  .wrapper__main__main-bar__button-list
+    = link_to "小", "#", class: 'btn btn-large'
+    = link_to "中", "#", class: 'btn btn-middle'
+    = link_to "大", "#", class: 'btn btn-small'
+  .wrapper__main__main-bar__letter
+    = form_with model: @post, local: true do |f|
+      = find_and_preserve(f.text_area id:"wrapper__main__main-bar__letter__text", placeholder: "wow")
