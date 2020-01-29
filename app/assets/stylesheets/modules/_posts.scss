@@ -1,0 +1,117 @@
+.wrapper {
+  width: 1000px;
+  height: 1000px;
+  margin: auto;
+
+  &__header {
+    width: 100%;
+    height: 60px;
+    background-color: #696969;
+  }
+  &__main {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+
+    &__side-bar {
+      width: 300px;
+      height: 100%;
+      background-color: blue;
+
+      &__block1 {
+        width: 100%;
+        height: 50px;
+        background-color: yellow;
+        margin-top: 40px;
+        font-size: 30px;
+        text-align: center;
+      }
+      &__block2 {
+        width: 100%;
+        height: 50px;
+        background-color: yellow;
+        margin-top: 40px;
+        font-size: 30px;
+        text-align: center;
+      }
+      &__block3 {
+        width: 100%;
+        height: 50px;
+        background-color: yellow;
+        margin-top: 40px;
+        font-size: 30px;
+        text-align: center;
+      }
+      &__block4 {
+        width: 100%;
+        height: 50px;
+        background-color: yellow;
+        margin-top: 40px;
+        font-size: 30px;
+        text-align: center;
+      }
+      &__block5 {
+        width: 100%;
+        height: 50px;
+        background-color: yellow;
+        margin-top: 40px;
+        font-size: 30px;
+        text-align: center;
+      }
+      &__block6 {
+        width: 100%;
+        height: 50px;
+        background-color: yellow;
+        margin-top: 40px;
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+
+    &__main-bar {
+      width: calc(100% - 300px);
+      height: 100%;
+      background-color: #99CCCC;
+
+      &__button-list {
+        width: 100%;
+        height: 100px;
+        margin-left: 50px;
+
+        .btn {
+          background-color: gray;
+          color: black;
+          font-size: 28px;
+          margin-left: 25px;
+          border-radius: 4px;/*角の丸み*/
+          box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+          font-weight: bold;
+          text-decoration: none;
+          line-height: 100px;
+        }
+        .btn:active {
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+        }
+      }
+
+      &__letter {
+        width: 620px;
+        height: 800px;
+        margin: auto;
+
+          form {
+            width: 620px;
+            height: 800px;
+            background-image: image-url("../assets/cherry-blossom.jpg");
+            background-size: cover;
+
+            textarea {
+              width: 620px;
+              height: 800px;
+              font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
