@@ -1,9 +1,26 @@
 .wrapper__main__side-bar
-  .wrapper__main__side-bar__block1
-    = link_to edit_user_path(current_user) do
-      = icon('fas', 'cog', class: 'icon')
-  .wrapper__main__side-bar__block2
-  .wrapper__main__side-bar__block3 デザイン3
-  .wrapper__main__side-bar__block4 デザイン4
-  .wrapper__main__side-bar__block5 デザイン5
-  .wrapper__main__side-bar__block6 デザイン6
+  = form_with model: @post, local: true do |form|
+    .wrapper__main__side-bar__block1
+      = form.radio_button :select, "デザイン1", class: "radio_btn", id: "design1"
+      = form.label "デザイン1", for: "design1"
+    .wrapper__main__side-bar__block2
+      = form.radio_button :select, "デザイン2", class: "radio_btn", id: "design2"
+      = form.label "デザイン2", for: "design2"
+    .wrapper__main__side-bar__block3
+      = form.radio_button :select, "デザイン3", class: "radio_btn", id: "design3"
+      = form.label "デザイン3", for: "design3"
+    .wrapper__main__side-bar__block4
+      = form.radio_button :select, "デザイン4", class: "radio_btn", id: "design4"
+      = form.label "デザイン4", for: "design4"
+    .wrapper__main__side-bar__block5
+      = form.radio_button :select, "デザイン5", class: "radio_btn", id: "design5"
+      = form.label "デザイン5", for: "design5"
+    .wrapper__main__side-bar__block6
+      = form.radio_button :select, "デザイン6", class: "radio_btn", id: "design6"
+      = form.label "デザイン6", for: "design6"
+    .wrapper__main__side-bar__block7
+      = form.radio_button :select, "デザイン7", class: "radio_btn", id: "design7"
+      = form.label "デザイン7", for: "design7"
+    .wrapper__main__side-bar__block8
+      = form.radio_button :select, "デザイン8", class: "radio_btn", id: "design8"
+      = form.label "デザイン8", for: "design8"
