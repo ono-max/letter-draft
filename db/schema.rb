@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2020_01_31_064009) do
     t.string "select"
     t.string "image"
     t.string "email"
-    t.integer "date"
+    t.datetime "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

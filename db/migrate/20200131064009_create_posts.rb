@@ -5,7 +5,7 @@ class CreatePosts < ActiveRecord::Migration[5.2]
       t.string :select
       t.string :image
       t.string :email
-      t.integer :date
+      t.datetime :date
       t.timestamps
     end
   end
