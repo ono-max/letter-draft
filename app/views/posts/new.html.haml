@@ -1,5 +1,37 @@
-.wrapper
-  = render "shared/header"
-  .wrapper__main
-    = render "views/shared/side_bar"
-    = render "views/shared/main_letter"
+.overall
+  .overall__wrapper
+    = render "shared/header"
+    .overall__wrapper__main
+      = form_with model: @post, local: true do |form|
+        .overall__wrapper__main__main-box
+          .overall__wrapper__main__main-box__side-bar
+            = form.email_field :email
+            .overall__wrapper__main__main-box__side-bar__block1
+              = link_to edit_user_path(current_user) do
+                = icon('fas', 'cog', class: 'icon')
+            .overall__wrapper__main__main-box__side-bar__block2
+              = form.radio_button :select, "デザイン2", class: "radio_btn", id: "design2"
+              = form.label "デザイン2", for: "design2"
+            .overall__wrapper__main__main-box__side-bar__block3
+              = form.radio_button :select, "デザイン3", class: "radio_btn", id: "design3"
+              = form.label "デザイン3", for: "design3"
+            .overall__wrapper__main__main-box__side-bar__block4
+              = form.radio_button :select, "デザイン4", class: "radio_btn", id: "design4"
+              = form.label "デザイン4", for: "design4"
+            .overall__wrapper__main__main-box__side-bar__block5
+              = form.radio_button :select, "デザイン5", class: "radio_btn", id: "design5"
+              = form.label "デザイン5", for: "design5"
+            .overall__wrapper__main__main-box__side-bar__block6
+              = form.radio_button :select, "デザイン6", class: "radio_btn", id: "design6"
+              = form.label "デザイン6", for: "design6"
+            .overall__wrapper__main__main-box__side-bar__block7
+              = form.radio_button :select, "デザイン7", class: "radio_btn", id: "design7"
+              = form.label "デザイン7", for: "design7"
+            .overall__wrapper__main__main-box__side-bar__block8
+              = form.radio_button :select, "デザイン8", class: "radio_btn", id: "design8"
+              = form.label "デザイン8", for: "design8"
+          .overall__wrapper__main__main-box__main-bar
+            = form.date_select :date, {discard: true}
+            .overall__wrapper__main__main-box__main-bar__letter
+              = find_and_preserve(form.text_area :content, id:"overall__wrapper__main__main-bar__letter__text", placeholder: "wow")
+              = form.submit

@@ -1,26 +1,28 @@
 .wrapper {
-  width: 1000px;
-  height: 1000px;
-  margin: auto;
 
   &__main {
-    width: 100%;
-    height: calc(100% - 60px);
-    display: flex;
-    padding-top: 100px;
 
-    &__form {
-      background-color: #d3f1f9;
-      width: 800px;
-      height: 500px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      padding-top: 200px;
+    &__main-content {
+      width: 600px;
+      height: 400px;
+      background-color: #e2f2fe;
+      margin-left: 200px;
+      padding-top: 100px;
 
-      &__email {
-        margin-top: 20px;
-        font-size: 25px;
+      &__date {
+        font-size: 22px;
+        text-align: center;
+      }
+
+      &__form {
+        font-size: 30px;
+        line-height: 100px;
+        text-align: center;
+      }
+
+      &__submit {
+        font-size: 30px;
+        text-align: center;
       }
     }
   }
