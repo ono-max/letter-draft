@@ -1,11 +1,24 @@
 .overall
-  .overall__wrapper
-    = render "shared/header"
-    .overall__wrapper__main
-      = form_with model: @post, local: true do |form|
+  = form_with model: @post, local: true do |form|
+    .overall__wrapper
+      .overall__wrapper__header
+        .overall__wrapper__header__left-box
+          = link_to "マイページ", "#", class: "btn-flat"
+        .overall__wrapper__header__right-box
+          .overall__wrapper__header__right-box__box1
+            = link_to "下書き保存", "#", class: "btn-simple"
+          .overall__wrapper__header__right-box__box2
+            = form.submit "送信", class: "btn-gradient"
+      .overall__wrapper__main
+        .overall__wrapper__main__form
+          .overall__wrapper__main__form__email
+            = form.email_field :email, placeholder: "送り主のEmail"
+          .overall__wrapper__main__form__explain
+            %p 送る日
+          .overall__wrapper__main__form__date
+            = form.date_select :date, date_separator: '/', use_month_numbers:true
         .overall__wrapper__main__main-box
           .overall__wrapper__main__main-box__side-bar
-            = form.email_field :email
             .overall__wrapper__main__main-box__side-bar__block1
               = form.radio_button :select, "デザイン1", class: "radio_btn", id: "design1"
               = form.label "デザイン1", for: "design1"
@@ -31,7 +44,5 @@
               = form.radio_button :select, "デザイン8", class: "radio_btn", id: "design8"
               = form.label "デザイン8", for: "design8"
           .overall__wrapper__main__main-box__main-bar
-            = form.date_select :date, {discard: true}
             .overall__wrapper__main__main-box__main-bar__letter
-              = find_and_preserve(form.text_area :content, id:"overall__wrapper__main__main-bar__letter__text", placeholder: "wow")
-              = form.submit
+              = find_and_preserve(form.text_area :content, id:"overall__wrapper__main__main-bar__letter__text", placeholder: "ここから書く")
