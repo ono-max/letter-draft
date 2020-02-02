@@ -1,0 +1,29 @@
+.wrapper {
+
+  &__main {
+
+    &__main-content {
+      width: 600px;
+      height: 400px;
+      background-color: #e2f2fe;
+      margin-left: 200px;
+      padding-top: 100px;
+
+      &__date {
+        font-size: 22px;
+        text-align: center;
+      }
+
+      &__form {
+        font-size: 30px;
+        line-height: 100px;
+        text-align: center;
+      }
+
+      &__submit {
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+  }
+}

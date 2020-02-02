@@ -1,159 +1,207 @@
-.wrapper {
-  width: 1000px;
-  height: 1000px;
-  margin: auto;
+.overall {
+  width: 100%;
+  height: 100%;
+  background-color: #fff8ff;
 
-  &__header {
-    width: 100%;
-    height: 60px;
-    background-color: #696969;
-    padding: 10px 10px 0 10px;
-    display: flex;
-    justify-content: space-between;
+  &__wrapper {
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
 
-    &__left-box {
-      width: 120px;
-      height: 46px;
-      margin-left: 10px;
-
-      .btn-flat {
-        text-decoration: none;
-        border: solid 2px white;
-        border-radius: 3px;
-        transition: .4s;
-        color: white;
-        padding: 0.3em 1em;
-        display: inline-block;
-      }
-    }
-    &__right-box {
-      width: 200px;
-      height: 46px;
+    &__header {
+      width: 100%;
+      height: 60px;
+      background-color: #696969;
+      padding: 10px 10px 0 10px;
       display: flex;
-      margin-right: 30px;
+      justify-content: space-between;
+      margin-bottom: 50px;
 
-      .btn-simple {
-        display: inline-block;
-        font-weight: bold;
-        padding: 0.25em 0.5em;
-        text-decoration: none;
-        color: #00BCD4;
-        background: #ECECEC;
-        transition: .4s;
-        margin: 6px 30px 0 0;
-      }
+      &__left-box {
+        width: 120px;
+        height: 46px;
+        margin-left: 10px;
 
-      .btn-gradient {
-        display: inline-block;
-        padding: 0.5em 1em;
-        text-decoration: none;
-        color: #FFF;
-        background-image: linear-gradient(#6795fd 0%, #d19ef8 100%);
-        transition: .4s;
-      }
-    }
-  }
-  &__main {
-    width: 100%;
-    height: calc(100% - 60px);
-    display: flex;
-
-    &__side-bar {
-      width: 300px;
-      height: 100%;
-      background-color: #e6fff5;
-
-      &__block1 {
-        width: 100%;
-        height: 50px;
-        background-color: #ebe1ff;
-        margin-top: 40px;
-        font-size: 30px;
-        text-align: center;
-      }
-      &__block2 {
-        width: 100%;
-        height: 50px;
-        background-color: #ebe1ff;
-        margin-top: 40px;
-        font-size: 30px;
-        text-align: center;
-      }
-      &__block3 {
-        width: 100%;
-        height: 50px;
-        background-color: #ebe1ff;
-        margin-top: 40px;
-        font-size: 30px;
-        text-align: center;
-      }
-      &__block4 {
-        width: 100%;
-        height: 50px;
-        background-color: #ebe1ff;
-        margin-top: 40px;
-        font-size: 30px;
-        text-align: center;
-      }
-      &__block5 {
-        width: 100%;
-        height: 50px;
-        background-color: #ebe1ff;
-        margin-top: 40px;
-        font-size: 30px;
-        text-align: center;
-      }
-      &__block6 {
-        width: 100%;
-        height: 50px;
-        background-color: #ebe1ff;
-        margin-top: 40px;
-        font-size: 30px;
-        text-align: center;
-      }
-    }
-
-    &__main-bar {
-      width: calc(100% - 300px);
-      height: 100%;
-      background-color: #fbf5ff;
-
-      &__button-list {
-        width: 100%;
-        height: 100px;
-        margin-left: 50px;
-
-        .btn {
-          background-color: gray;
-          color: black;
-          font-size: 28px;
-          margin-left: 25px;
-          border-radius: 4px;/*角の丸み*/
-          box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
-          font-weight: bold;
+        .btn-flat {
           text-decoration: none;
-          line-height: 100px;
-        }
-        .btn:active {
-          box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+          border: solid 2px white;
+          border-radius: 3px;
+          transition: .4s;
+          color: white;
+          padding: 0.3em 1em;
+          display: inline-block;
         }
       }
+      &__right-box {
+        width: 200px;
+        height: 46px;
+        display: flex;
+        margin-right: 30px;
 
-      &__letter {
-        width: 620px;
-        height: 800px;
-        margin: auto;
+        .btn-simple {
+          display: inline-block;
+          font-weight: bold;
+          padding: 0.25em 0.5em;
+          text-decoration: none;
+          color: #00BCD4;
+          background: #ECECEC;
+          transition: .4s;
+          margin: 6px 30px 0 0;
+        }
 
-          form {
-            width: 620px;
-            height: 800px;
-            background-image: image-url("../assets/cherry-blossom.jpg");
-            background-size: cover;
+        .btn-gradient {
+          display: inline-block;
+          padding: 0.5em 1em;
+          text-decoration: none;
+          color: #FFF;
+          background-image: linear-gradient(#6795fd 0%, #d19ef8 100%);
+          transition: .4s;
+        }
+      }
+    }
+    &__main {
+      width: 1000px;
+      height: calc(100% - 60px);
 
-            textarea {
+        &__main-box {
+          width: 1000px;
+          height: 940px;
+          display: flex;
+
+          &__side-bar {
+            width: 300px;
+            height: 100%;
+            background-color: #e6fff5;
+
+            // .radio_btn {
+            //   display: none;
+            // }
+
+            .radio_btn + label {
+              display: inline-block;
+              box-sizing: border-box;
+              font-size: 14px;
+              font-weight: normal;
+              color: #888;
+              border: solid 1px #EDBC6C;
+              border-radius: 5px;
+              margin-top: 10px;
+              padding: 3px 10px;
+              background-color: #fff;
+              cursor: pointer;
+            }
+
+            .field .radio_btn:checked + label {
+              color: #fff;
+              background-color: #EDBC6C;
+              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+            }
+
+            &__block1 {
+              width: 100%;
+              height: 50px;
+              background-color: #ebe1ff;
+              margin-top: 40px;
+              font-size: 30px;
+              text-align: center;
+            }
+            &__block2 {
+              width: 100%;
+              height: 50px;
+              background-color: #ebe1ff;
+              margin-top: 40px;
+              font-size: 30px;
+              text-align: center;
+            }
+            &__block3 {
+              width: 100%;
+              height: 50px;
+              background-color: #ebe1ff;
+              margin-top: 40px;
+              font-size: 30px;
+              text-align: center;
+            }
+            &__block4 {
+              width: 100%;
+              height: 50px;
+              background-color: #ebe1ff;
+              margin-top: 40px;
+              font-size: 30px;
+              text-align: center;
+            }
+            &__block5 {
+              width: 100%;
+              height: 50px;
+              background-color: #ebe1ff;
+              margin-top: 40px;
+              font-size: 30px;
+              text-align: center;
+            }
+            &__block6 {
+              width: 100%;
+              height: 50px;
+              background-color: #ebe1ff;
+              margin-top: 40px;
+              font-size: 30px;
+              text-align: center;
+            }
+            &__block7 {
+              width: 100%;
+              height: 50px;
+              background-color: #ebe1ff;
+              margin-top: 40px;
+              font-size: 30px;
+              text-align: center;
+            }
+            &__block8 {
+              width: 100%;
+              height: 50px;
+              background-color: #ebe1ff;
+              margin-top: 40px;
+              font-size: 30px;
+              text-align: center;
+            }
+          }
+
+          &__main-bar {
+            width: calc(100% - 300px);
+            height: 100%;
+            background-color: #fbf5ff;
+
+            &__button-list {
+              width: 100%;
+              height: 100px;
+              margin-left: 50px;
+
+              .btn {
+                background-color: gray;
+                color: black;
+                font-size: 28px;
+                margin-left: 25px;
+                border-radius: 4px;/*角の丸み*/
+                box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+                font-weight: bold;
+                text-decoration: none;
+                line-height: 100px;
+              }
+              .btn:active {
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+              }
+            }
+
+            &__letter {
               width: 620px;
               height: 800px;
-              font-size: 25px;
+              margin: auto;
+              background-image: image-url("../assets/cherry-blossom.jpg");
+              background-size: cover;
+
+                textarea {
+                  width: 620px;
+                  height: 800px;
+                  font-size: 25px;
+
+            }
           }
         }
       }
