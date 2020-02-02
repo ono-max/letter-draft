@@ -1,24 +1,39 @@
-# README
+Name
+====
+Future letter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Overview
 
-Things you may want to cover:
+This is a future letter. User can send the letter to someone in the future such as one year later or two years later.
 
-* Ruby version
+## Description
 
-* System dependencies
+This is written in HTML5(Haml), CSS3(Sass), Javascript(jQuery), Ruby on Rails.
 
-* Configuration
+## Demo
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+## Requirement
 
-* Services (job queues, cache servers, search engines, etc.)
+I recommend using Google Chrome.
 
-* Deployment instructions
+## Usage
 
-* ...
+
+
+## Install
+
+git clone https://github.com/ono-max/PixelArtMaker.git
+
+## Contribution
+
+1. Fork it ( https://github.com/ono-max/PixelArtMaker.git )
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create new Pull Request
+
+## Author
+
+ono-max
