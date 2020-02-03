@@ -9,33 +9,40 @@
       - @posts.each do |post|
         - if post.select == "デザイン1"
           .view__overall__contents__post{ style: "background: url('../assets/cherry-blossom.jpg'); background-size: cover"}
-            .view__overall__contents__post__text
-              = simple_format(post.content)
+            = link_to post_path(post.id) do
+              .view__overall__contents__post__text
+                = simple_format(post.content)
         - elsif post.select == "デザイン2"
           .view__overall__contents__post{ style: "background: url('../assets/cat.jpg'); background-size: cover"}
-            .view__overall__contents__post__text
-              = simple_format(post.content)
+            = link_to post_path(post.id) do
+              .view__overall__contents__post__text
+                = simple_format(post.content)
         - elsif post.select == "デザイン3"
           .view__overall__contents__post{ style: "background: url('../assets/car.jpg'); background-size: cover"}
-            .view__overall__contents__post__text
-              = simple_format(post.content)
-        - elsif post.select == "デザイン4"
+            = link_to post_path(post.id) do
+              .view__overall__contents__post__text
+                = simple_format(post.content)
           .view__overall__contents__post{ style: "background: url('../assets/chair.jpg'); background-size: cover"}
-            .view__overall__contents__post__text
-              = simple_format(post.content)
+            = link_to post_path(post.id) do
+              .view__overall__contents__post__text
+                = simple_format(post.content)
         - elsif post.select == "デザイン5"
           .view__overall__contents__post{ style: "background: url('../assets/flower.jpg'); background-size: cover"}
-            .view__overall__contents__post__text
-              = simple_format(post.content)
+            = link_to post_path(post.id) do
+              .view__overall__contents__post__text
+                = simple_format(post.content)
         - elsif post.select == "デザイン6"
           .view__overall__contents__post{ style: "background: url('../assets/sunset.jpg'); background-size: cover"}
-            .view__overall__contents__post__text
-              = simple_format(post.content)
+            = link_to post_path(post.id) do
+              .view__overall__contents__post__text
+                = simple_format(post.content)
         - elsif post.select == "デザイン7"
           .view__overall__contents__post{ style: "background: url('../assets/pattern.jpg'); background-size: cover"}
-            .view__overall__contents__post__text
-              = simple_format(post.content)
+            = link_to post_path(post.id) do
+              .view__overall__contents__post__text
+                = simple_format(post.content)
         - elsif post.select == "デザイン8"
           .view__overall__contents__post{ style: "background: url('../assets/cherry-blossom.jpg'); background-size: cover"}
-            .view__overall__contents__post__text
-              = simple_format(post.content)
+            = link_to post_path(post.id) do
+              .view__overall__contents__post__text
+                = simple_format(post.content)
