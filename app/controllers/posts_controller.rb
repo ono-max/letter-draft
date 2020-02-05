@@ -8,7 +8,8 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
+    @created_post = Post.create(post_params)
+    NotificationMailer.send_confirm_to_user(@created_post).deliver
   end
 
   def show
