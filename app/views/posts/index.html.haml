@@ -4,7 +4,10 @@
       .view__overall__header__left-box
         = link_to current_user.name, edit_user_path(current_user), class: "btn-flat"
       .view__overall__header__right-box
-        = link_to "手紙を書く", new_post_path, class: "btn-gradient"
+        .view__overall__header__right-box__box1
+          = link_to "マイページ", "/users/#{current_user.id}", class: "btn-flat"
+        .view__overall__header__right-box__box2
+          = link_to "手紙を書く", new_post_path, class: "btn-gradient"
     .view__overall__contents
       - @posts.each do |post|
         - if post.select == "デザイン1"

@@ -8,8 +8,13 @@ class UsersController < ApplicationController
       render :edit
     end
   end
-  private
 
+  def show
+    @posts = current_user.posts
+  end
+
+  private
+  
   def user_params
     params.require(:user).permit(:name, :email)
   end
