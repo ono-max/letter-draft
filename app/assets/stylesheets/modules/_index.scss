@@ -1,6 +1,6 @@
 .view {
   width: 100%;
-  height: 100%;
+  height: 1000%;
   background-color: #fff8ff;
 
   &__overall {
@@ -74,6 +74,7 @@
         }
 
           &__text {
+            font-size: 23px;
             width: 310px;
             height: 390px;
           }
