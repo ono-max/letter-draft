@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
+  <meta name="viewport" content="width=device-width" />
+  <title>Title</title>
+  <link rel="stylesheet" href="app/assets/stylesheet/modules/mail.css" />
+</head>
+
+<body>
+  <table class="body">
+    <tr>
+      <td align="center" valign="top">
+        <center>
+          <table>
+            <%= @post.user.name %> 様<br><br>
+            この度はフューチャーレターをご利用頂きありがとうございます！<br>
+            お送りした手紙を承りました。<br>
+            以下の内容でお送りいたします。<br><br><br>
+            ===============================================================<br>
+            送り先のメールアドレス: <%= @post.email %><br>
+            送る日: <%= @post.date.strftime("%Y-%m-%d")%><br>
+            ===============================================================<br><br>
+          </table>
+          <table>
+            <%= simple_format(@post.content)%>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
