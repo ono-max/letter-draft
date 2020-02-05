@@ -10,6 +10,8 @@ This is a future letter. The user can send the letter to someone in the future s
 
 This is written in HTML5(Haml), CSS3(Sass), JavaScript(jQuery), Ruby on Rails(5.2.4.1). The user type email of the recipient, date of sending day, the background-image, the content of letter. They are stored in the database. Based on the database, the manager of this web application send the letter to recipient in email.
 
+feature: auto-mail(when user submit, he/she accepts the mail.), multipart-forms, switch the background image(when user click the button)
+
 ## Demo
 
 
