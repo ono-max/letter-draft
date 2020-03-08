@@ -1,10 +1,10 @@
 Name
 ====
-Future letter(I'm creating this application now.)
+レタ活！〜手紙の下書き〜(I'm creating this application now.)
 
 Overview
 
-This is a future letter. The user can send the letter to someone in the future such as one year later or two years later.
+This is the letter-draft. The user can send the letter to someone in the future such as one year later or two years later.
 
 ## Description
 
